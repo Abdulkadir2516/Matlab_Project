@@ -21,3 +21,12 @@ max_iterations = 100;
 root = newtonRaphson(func, derivative, initial_guess, tolerance, max_iterations);
 disp(root);
 
+%Gaus Eliminasyon Yöntemi
+A = [2, -3, -4, 5; -1, -5, 2 -10; 1, 4, -3, -1; -1, 1, 5, -2];
+b = [4; -29; 16; -6];
+
+x = gaussElimination(A, b);
+disp(x);
+
+
+
