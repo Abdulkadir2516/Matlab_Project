@@ -1,0 +1,41 @@
+function x = Chio(A)
+% A matrisin kendisi
+
+dim = size(A)
+
+if dim == [2 2]
+    x = det(A);
+end
+
+if dim(1) ~= dim(2) 
+    error('Kare Bir Matris Girilmelidir');
+end
+
+k = 1;
+
+while A(1,1) == 0
+    k = k+1
+    gecici = A(:,1);
+    A(:,1) = A(:,k);
+    A(:,k) = gecici;
+end
+
+disp(A)
+
+
+
+
+
+
+% 
+% x = x0;
+% for i = 1:max_iterations
+%     dfdx = (f(x + 1e-8) - f(x)) / 1e-8; % approximate derivative numerically
+%     dx = -f(x) / dfdx;
+%     x = x + dx;
+%     if abs(dx) < tolerance
+%         break;
+%     end
+% end
+% iterations = i;
+% end

@@ -36,3 +36,8 @@ det_val = Gauss_Eleme(C);
 disp(det_val);
 
 
+A = [3 7 8 15; 2 6 5 11; 2 6 10 19; 4 11 19 88];
+determinant = Chio(A);
+disp(determinant);
+
+

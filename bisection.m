@@ -1,6 +1,8 @@
 clear; clc;
 format short
 
+f = @(x) 4.5*x - 2*cos(x);
+
 a0=str2double(input("1. sayi", 's'));
 b0=str2double(input("2. sayi", 's'));
 hata = 0.07;
