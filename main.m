@@ -28,7 +28,7 @@ b = [4; -29; 16; -6];
 x = gaussElimination(A, b);
 disp(x);
 
-%Gaus Eliminasyon Yöntemi Determinan hesabı
+%Gaus Eliminasyon Yöntemi Determinant hesabı
 C = [1 1 1 1 1;1 2 3 4 5;1 3 5 10 15;1 4 10 20 35;1 5 15 35 70];
 
 %C = [1, 1, 1, 1, 1; 1, 2, 3, 4, 5; 1, 3, 5, 10, 15; 1, 4, 10, 20, 35; 1, 5, 15, 35, 70];
